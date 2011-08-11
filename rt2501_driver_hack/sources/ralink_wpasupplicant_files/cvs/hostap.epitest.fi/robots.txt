@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /bugz/
+
+User-agent: Wget
+Disallow: /cgi-bin/
+Disallow: /gitweb/
+Disallow: /bugz/

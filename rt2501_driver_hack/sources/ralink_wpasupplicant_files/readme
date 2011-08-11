@@ -1,0 +1,90 @@
+*****************************************************************
+    RT73 a/b/g STA driver interface with WPA Supplicant
+                      Ralink Tech Corp.
+*****************************************************************
+
+Q0. Contents:
+-----------------------
+defconfig
+driver.h
+driver_ralink.c
+driver_ralink.h
+drivers.c
+events.c
+Makefile
+wpa_supplicant.c
+wpa_supplicant_i.h
+README
+wpa_supplicant_example.conf
+
+
+Q1. How to compile
+-----------------------
+The driver interface was developed on wpa_supplicant v.0.5.8.
+You can install the WPA Supplicant Free Edition development from website.
+
+	http://hostap.epitest.fi/wpa_supplicant/
+	
+After download the package then go to wpa_supplicant directory
+Follow the steps..
+
+1.) Copy file "driver_ralink.c" and "driver_ralink.h" we provide to wpa_supplicant directory.
+1.1.) Copy files driver.h, events.c, wpa_supplicant.c, wpa_supplicant_i.h we provide to wpa_supplicant directory.
+2.) Set driver_ralink configuration as y in the "defconfig" or update to the "defconfig" we provide::
+
+# Driver interface for Ralink rt73 driver
+CONFIG_DRIVER_RALINK=y
+    
+3.) Add wpa_driver_ralink_ops() into wpa_supplicant_drivers() in file "drivers.c" 
+    or update to the file "drivers.c" we provide:: 
+    
+#ifdef CONFIG_DRIVER_RALINK
+extern struct wpa_driver_ops wpa_driver_ralink_ops; /* driver_ralink.c */
+#endif /* CONFIG_DRIVER_RALINK */
+    :
+    :
+struct wpa_driver_ops *wpa_supplicant_drivers[] =
+{ 
+#ifdef CONFIG_DRIVER_RALINK
+	&wpa_driver_ralink_ops,
+#endif /* CONFIG_DRIVER_RALINK */  
+}
+    
+4.) Edit the "Makefile" or update to the "Makefile" we provide::
+
+ifdef CONFIG_DRIVER_RALINK
+CFLAGS += -DCONFIG_DRIVER_RALINK
+OBJS_d += driver_ralink.o
+endif
+
+5.) type $cp defconfig .config
+6.) Compile the source code using 'make' command.
+    
+
+Q2. How to start wpa_supplicant
+--------------------------------
+1.) First start rt73 driver.
+
+2.) Edit/Create a configuration file of wpa_supplicant.
+   -a)  Set your work directory of wpa_supplicant for sockets
+        ctrl_interface = YOUR_WORK_PATH
+        
+   -b)  Set YOUR_OPENSC_PATH if need be. (e.g. generate certificates)
+        opensc_engine_path =/YOUR_OPENSC_PATH/engine_opensc.so
+        pkcs11_engine_path =/YOUR_OPENSC_PATH/engine_pkcs11.so
+        pkcs11_module_path =/YOUR_OPENSC_PATH/opensc-pkcs11.so
+
+   -c)  Set network configuration. (e.g. WPA/EAP-TTLS)
+   
+    *** refer to wpa_supplicant.conf in details or related documents ***
+    
+3.) Manually start wpa_supplicant, 
+    type $./wpa_supplicant -c your_config_file -i rausb0 -D ralink
+
+    turn on debug mode,
+    type $./wpa_supplicant -c your_config_file -i rausb0 -D ralink -d
+
+Notes:
+1.) wpa_supplicant 0.5.8 can not compiler with Redhat Enterprise Linux 5 
+	kernel 2.6.18-8.el5xen.  Update Redhat Enterprise Linux 5 kernel to
+	current version (kernel-xen-2.6.18-8.1.15.el5xen) can solve it.

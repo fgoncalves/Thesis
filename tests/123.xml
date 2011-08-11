@@ -1,0 +1,4 @@
+<handler id="123">
+	<transport type="unreliable" />
+	<address type="inet" addr="127.0.0.1" port="57843" />
+</handler>

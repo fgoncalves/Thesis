@@ -1,0 +1,29 @@
+Intro
+=====
+Platform for sensor networks, which is capable of synchronizing and aggregating packets sent by other applications. It has user and kernel code.
+
+Steps to compile this lib
+=========================
+1. make 
+2. make install
+
+Compilling local registry daemon
+================================
+1. cd localregistry/daemon
+2. make exec
+(If you want to install it)
+3. make install
+
+Compilling local registry shell command
+=======================================
+1. make install
+2. cd localregistry/shell
+3. make
+
+(If you want to install it)
+4. make install
+
+Compilling kernel modules
+=========================
+1. cd kernel
+2. sh compile.sh

@@ -1,0 +1,4678 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- ViewVC :: http://www.viewvc.org/ -->
+<head>
+<title>[cvs] Index of /hostap/wpa_supplicant</title>
+<meta name="generator" content="ViewVC 1.0.7" />
+<link rel="stylesheet" href="/cgi-bin/viewcvs.cgi/*docroot*/styles.css" type="text/css" />
+
+</head>
+<body>
+<div class="vc_navheader">
+
+<form method="get" action="/cgi-bin/viewcvs.cgi/">
+
+<table style="padding:0.1em;">
+<tr>
+<td>
+<strong>
+
+<a href="/cgi-bin/viewcvs.cgi/">
+
+[cvs]</a>
+/
+
+<a href="/cgi-bin/viewcvs.cgi/hostap/">
+
+hostap</a>
+/
+
+
+
+wpa_supplicant
+
+
+</strong>
+
+</td>
+<td style="text-align:right;">
+
+
+<strong>Repository:</strong>
+<select name="root" onchange="submit()">
+
+
+<option value="*viewroots*">Repository Listing</option>
+
+
+
+
+
+
+
+
+
+
+<optgroup label="CVS Repositories"><option selected="selected">cvs</option></optgroup>
+
+
+</select>
+<input type="submit" value="Go" />
+
+</td>
+</tr>
+</table>
+
+</form>
+
+</div>
+<div style="float: right; padding: 5px;"><a href="http://www.viewvc.org/"><img src="/cgi-bin/viewcvs.cgi/*docroot*/images/logo.png" alt="ViewVC logotype" width="128" height="48" /></a></div>
+<h1>Index of /hostap/wpa_supplicant</h1>
+
+
+<table class="auto">
+<tr><td>Files shown:</td><td><strong>164</strong>
+
+
+(<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/?hideattic=0">Show 25 dead files</a>)
+
+
+</td></tr>
+
+<tr>
+<td>Sticky Tag:</td>
+<td><form method="get" action="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/" style="display: inline">
+<div style="display: inline">
+
+
+
+<select name="pathrev" onchange="submit()">
+<option value=""></option>
+
+<optgroup label="Branches">
+
+
+<option>MAIN</option>
+
+
+
+<option>linux26_branch</option>
+
+
+
+<option>hostap_0_5_branch</option>
+
+
+
+<option>hostap_0_4_branch</option>
+
+
+
+<option>hostap_0_3_branch</option>
+
+
+
+<option>hostap_0_2_branch</option>
+
+
+</optgroup>
+
+<optgroup label="Non-branch tags">
+
+
+<option>stable</option>
+
+
+
+<option>linux26_merge_1</option>
+
+
+
+<option>linux26_bp</option>
+
+
+
+<option>hostap_0_5_9</option>
+
+
+
+<option>hostap_0_5_8</option>
+
+
+
+<option>hostap_0_5_7</option>
+
+
+
+<option>hostap_0_5_6</option>
+
+
+
+<option>hostap_0_5_5</option>
+
+
+
+<option>hostap_0_5_4</option>
+
+
+
+<option>hostap_0_5_3</option>
+
+
+
+<option>hostap_0_5_2</option>
+
+
+
+<option>hostap_0_5_11</option>
+
+
+
+<option>hostap_0_5_10</option>
+
+
+
+<option>hostap_0_5_1</option>
+
+
+
+<option>hostap_0_5_0</option>
+
+
+
+<option>hostap_0_4_bp</option>
+
+
+
+<option>hostap_0_4_9</option>
+
+
+
+<option>hostap_0_4_8</option>
+
+
+
+<option>hostap_0_4_7</option>
+
+
+
+<option>hostap_0_4_6</option>
+
+
+
+<option>hostap_0_4_5</option>
+
+
+
+<option>hostap_0_4_4</option>
+
+
+
+<option>hostap_0_4_3</option>
+
+
+
+<option>hostap_0_4_2</option>
+
+
+
+<option>hostap_0_4_11</option>
+
+
+
+<option>hostap_0_4_10</option>
+
+
+
+<option>hostap_0_4_1</option>
+
+
+
+<option>hostap_0_4_0</option>
+
+
+
+<option>hostap_0_3_bp</option>
+
+
+
+<option>hostap_0_3_9</option>
+
+
+
+<option>hostap_0_3_8</option>
+
+
+
+<option>hostap_0_3_7</option>
+
+
+
+<option>hostap_0_3_6</option>
+
+
+
+<option>hostap_0_3_5</option>
+
+
+
+<option>hostap_0_3_4</option>
+
+
+
+<option>hostap_0_3_3</option>
+
+
+
+<option>hostap_0_3_2</option>
+
+
+
+<option>hostap_0_3_11</option>
+
+
+
+<option>hostap_0_3_10</option>
+
+
+
+<option>hostap_0_3_1</option>
+
+
+
+<option>hostap_0_3_0</option>
+
+
+
+<option>hostap_0_2_bp</option>
+
+
+
+<option>hostap_0_2_8</option>
+
+
+
+<option>hostap_0_2_7</option>
+
+
+
+<option>hostap_0_2_6</option>
+
+
+
+<option>hostap_0_2_5</option>
+
+
+
+<option>hostap_0_2_4</option>
+
+
+
+<option>hostap_0_2_3</option>
+
+
+
+<option>hostap_0_2_2</option>
+
+
+
+<option>hostap_0_2_1</option>
+
+
+
+<option>hostap_0_2_0</option>
+
+
+
+<option>HEAD</option>
+
+
+</optgroup>
+
+</select>
+
+<input type="submit" value="Set" />
+</div>
+</form>
+
+</td>
+</tr>
+
+
+</table>
+
+
+<p><a name="dirlist"></a></p>
+<hr />
+
+<table cellspacing="1" cellpadding="2">
+<thead>
+<tr>
+<th class="vc_header_sort" colspan="2">
+<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/?sortdir=down#dirlist">File
+
+<img class="vc_sortarrow" alt=""
+width="13" height="13"
+src="/cgi-bin/viewcvs.cgi/*docroot*/images/up.png" />
+
+</a>
+</th>
+<th class="vc_header">
+<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/?sortby=rev#dirlist">Rev.
+
+</a>
+</th>
+<th class="vc_header">
+<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/?sortby=date#dirlist">Age
+
+</a>
+</th>
+<th class="vc_header">
+<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/?sortby=author#dirlist">Author
+
+</a>
+</th>
+
+<th class="vc_header">
+<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/?sortby=log#dirlist">Last log entry
+
+</a>
+</th>
+
+</tr>
+</thead>
+<tbody>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+<a href="/cgi-bin/viewcvs.cgi/hostap/">
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/back_small.png" alt="" width="16" height="16"
+/>&nbsp;Parent&nbsp;Directory</a>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+</tr>
+
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="doc" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/doc/" title="View directory contents">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/dir.png" alt="" width="16" height="16" />
+doc/</a>
+
+</td>
+
+
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+
+<td>&nbsp;</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="examples" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/examples/" title="View directory contents">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/dir.png" alt="" width="16" height="16" />
+examples/</a>
+
+</td>
+
+
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+
+<td>&nbsp;</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="tests" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tests/" title="View directory contents">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/dir.png" alt="" width="16" height="16" />
+tests/</a>
+
+</td>
+
+
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+
+<td>&nbsp;</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="vs2005" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/vs2005/" title="View directory contents">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/dir.png" alt="" width="16" height="16" />
+vs2005/</a>
+
+</td>
+
+
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+
+<td>&nbsp;</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="wpa_gui" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_gui/" title="View directory contents">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/dir.png" alt="" width="16" height="16" />
+wpa_gui/</a>
+
+</td>
+
+
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+
+<td>&nbsp;</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="wpa_gui-qt4" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_gui-qt4/" title="View directory contents">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/dir.png" alt="" width="16" height="16" />
+wpa_gui-qt4/</a>
+
+</td>
+
+
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+
+<td>&nbsp;</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name=".cvsignore" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/.cvsignore?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+.cvsignore</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/.cvsignore?revision=1.3&amp;view=markup" title="View file contents"><strong>1.3</strong></a></td>
+
+<td>&nbsp;4 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added test programs to the list of ignored files.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="ChangeLog" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ChangeLog?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ChangeLog</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ChangeLog?revision=1.357&amp;view=markup" title="View file contents"><strong>1.357</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Updated IEEE 802.11r references to use D4.1.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="Makefile" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/Makefile?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+Makefile</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/Makefile?revision=1.199&amp;view=markup" title="View file contents"><strong>1.199</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Move dynamic_eap_methods from ALL variable to all: target to fix 'make
+install'....</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="README" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/README?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+README</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/README?revision=1.101&amp;view=markup" title="View file contents"><strong>1.101</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added text about OpenSSL and EAP-FAST requirements.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="README-Windows.txt" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/README-Windows.txt?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+README-Windows.txt</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/README-Windows.txt?revision=1.15&amp;view=markup" title="View file contents"><strong>1.15</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;winsvc: added support for configuring ctrl_interface parameters in
+registry (ctr...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="asn1.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/asn1.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+asn1.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/asn1.c?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for parsing BasicConstraints and KeyUsage
+extensions. Use data fro...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="asn1.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/asn1.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+asn1.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/asn1.h?revision=1.4&amp;view=markup" title="View file contents"><strong>1.4</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for parsing BasicConstraints and KeyUsage
+extensions. Use data fro...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="asn1_test.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/asn1_test.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+asn1_test.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/asn1_test.c?revision=1.8&amp;view=markup" title="View file contents"><strong>1.8</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added asn1_oid_to_str() for converting struct asn1_oid into a text
+string that c...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="base64.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/base64.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+base64.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/base64.c?revision=1.6&amp;view=markup" title="View file contents"><strong>1.6</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unneeded header file inclusions.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="base64.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/base64.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+base64.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/base64.h?revision=1.1&amp;view=markup" title="View file contents"><strong>1.1</strong></a></td>
+
+<td>&nbsp;4 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for named configuration blobs in order to avoid having
+to use file...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="bignum.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/bignum.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+bignum.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/bignum.c?revision=1.5&amp;view=markup" title="View file contents"><strong>1.5</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed a memory leak: must free the containing structure for bignum
+data.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="bignum.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/bignum.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+bignum.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/bignum.h?revision=1.1&amp;view=markup" title="View file contents"><strong>1.1</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added RSA and bignum implementations for crypto_internal.c. This
+allows the inte...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="config.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+config.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config.c?revision=1.141&amp;view=markup" title="View file contents"><strong>1.141</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Use os_ wrappers for common C library functions; these were forgotten
+in some of...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="config.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+config.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config.h?revision=1.61&amp;view=markup" title="View file contents"><strong>1.61</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Moved debug code that was used to print out configured networks into
+config.c so...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="config_file.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config_file.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+config_file.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config_file.c?revision=1.33&amp;view=markup" title="View file contents"><strong>1.33</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added preliminary implementation of IEEE 802.11r/D4.0. This commit is
+only addin...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="config_none.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config_none.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+config_none.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config_none.c?revision=1.4&amp;view=markup" title="View file contents"><strong>1.4</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Cleaned up config*.c by not including wpa.h into them. The only needed
+part from...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="config_ssid.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config_ssid.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+config_ssid.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config_ssid.h?revision=1.47&amp;view=markup" title="View file contents"><strong>1.47</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Cleaned up RSN definitions by moving the shared structures and defines
+into wpa_...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="config_winreg.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config_winreg.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+config_winreg.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/config_winreg.c?revision=1.23&amp;view=markup" title="View file contents"><strong>1.23</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added preliminary implementation of IEEE 802.11r/D4.0. This commit is
+only addin...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="crypto.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+crypto.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto.c?revision=1.15&amp;view=markup" title="View file contents"><strong>1.15</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;More os_*() wrapper conversions based on FreeBSD build.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="crypto.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+crypto.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto.h?revision=1.20&amp;view=markup" title="View file contents"><strong>1.20</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed doxygen comments.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="crypto_cryptoapi.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto_cryptoapi.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+crypto_cryptoapi.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto_cryptoapi.c?revision=1.8&amp;view=markup" title="View file contents"><strong>1.8</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Converted Windows specific files to use os_*() function wrappers for
+common C li...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="crypto_gnutls.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto_gnutls.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+crypto_gnutls.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto_gnutls.c?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced crypto function sha1_transform() with fips186_2_prf() to make
+it easier...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="crypto_internal.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto_internal.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+crypto_internal.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto_internal.c?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Started converting standard ANSI/POSIX C library function calls to use
+os_ prefi...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="crypto_libtomcrypt.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto_libtomcrypt.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+crypto_libtomcrypt.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto_libtomcrypt.c?revision=1.16&amp;view=markup" title="View file contents"><strong>1.16</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Continued changing direct library calls to use os_() wrapper for
+common C librar...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="crypto_none.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto_none.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+crypto_none.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/crypto_none.c?revision=1.1&amp;view=markup" title="View file contents"><strong>1.1</strong></a></td>
+
+<td>&nbsp;4 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added CONFIG_TLS=none option to make it easier to test full EAP
+compilation and ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="ctrl_iface.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ctrl_iface.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface.c?revision=1.109&amp;view=markup" title="View file contents"><strong>1.109</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Use os_ wrappers for common C library functions; these were forgotten
+in some of...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="ctrl_iface.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ctrl_iface.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface.h?revision=1.11&amp;view=markup" title="View file contents"><strong>1.11</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Moved wpa_msg() from wpa_supplicant.c into common.c in order to reduce
+direct de...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="ctrl_iface_dbus.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_dbus.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ctrl_iface_dbus.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_dbus.c?revision=1.18&amp;view=markup" title="View file contents"><strong>1.18</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed wpas_dbus_unregister_iface() not to dereference a NULL pointer
+even if wpa...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="ctrl_iface_dbus.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_dbus.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ctrl_iface_dbus.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_dbus.h?revision=1.5&amp;view=markup" title="View file contents"><strong>1.5</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Date: Fri, 29 Sep 2006 10:27:54 +0100
+From: Roy Marples &lt;<a href="mailto:uberlord&#64;gentoo.org">uberlord&#64;gentoo.org</a>&gt;
+Su...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="ctrl_iface_dbus_handlers.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_dbus_handlers.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ctrl_iface_dbus_handlers.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_dbus_handlers.c?revision=1.12&amp;view=markup" title="View file contents"><strong>1.12</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unneeded header file inclusions.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="ctrl_iface_dbus_handlers.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_dbus_handlers.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ctrl_iface_dbus_handlers.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_dbus_handlers.h?revision=1.4&amp;view=markup" title="View file contents"><strong>1.4</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Date: Mon, 04 Dec 2006 15:02:57 -0500
+From: Dan Williams &lt;<a href="mailto:dcbw&#64;redhat.com">dcbw&#64;redhat.com</a>&gt;
+Subje...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="ctrl_iface_named_pipe.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_named_pipe.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ctrl_iface_named_pipe.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_named_pipe.c?revision=1.13&amp;view=markup" title="View file contents"><strong>1.13</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed global ctrl_iface debug output to report successful write only
+in case Wri...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="ctrl_iface_udp.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_udp.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ctrl_iface_udp.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_udp.c?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Moved wpa_msg() from wpa_supplicant.c into common.c in order to reduce
+direct de...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="ctrl_iface_unix.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_unix.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ctrl_iface_unix.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ctrl_iface_unix.c?revision=1.15&amp;view=markup" title="View file contents"><strong>1.15</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replace os_strncpy/strncpy calls with os_strlcpy to start using a more
+secure fu...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="dbus-wpa_supplicant.conf" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/dbus-wpa_supplicant.conf?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+dbus-wpa_supplicant.conf</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/dbus-wpa_supplicant.conf?revision=1.1&amp;view=markup" title="View file contents"><strong>1.1</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;From: Dan Williams &lt;<a href="mailto:dcbw&#64;redhat.com">dcbw&#64;redhat.com</a>&gt;
+Subject: Re: [PATCH] more dbus control inte...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="dbus_dict_helpers.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/dbus_dict_helpers.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+dbus_dict_helpers.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/dbus_dict_helpers.c?revision=1.6&amp;view=markup" title="View file contents"><strong>1.6</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Whitespace cleanup.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="dbus_dict_helpers.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/dbus_dict_helpers.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+dbus_dict_helpers.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/dbus_dict_helpers.h?revision=1.2&amp;view=markup" title="View file contents"><strong>1.2</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;From: Dan Williams &lt;<a href="mailto:dcbw&#64;redhat.com">dcbw&#64;redhat.com</a>&gt;
+Subject: [PATCH] expanded dbus control inte...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="defconfig" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/defconfig?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+defconfig</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/defconfig?revision=1.55&amp;view=markup" title="View file contents"><strong>1.55</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added text about OpenSSL and EAP-FAST requirements.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="defs.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/defs.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+defs.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/defs.h?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added preliminary implementation of IEEE 802.11r/D4.0. This commit is
+only addin...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="driver.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver.h?revision=1.57&amp;view=markup" title="View file contents"><strong>1.57</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Changed Mobility Domain Identifier from 6 to 2 octets since this was
+changed in ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="driver_atmel.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_atmel.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_atmel.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_atmel.c?revision=1.17&amp;view=markup" title="View file contents"><strong>1.17</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unused variables.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="driver_broadcom.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_broadcom.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_broadcom.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_broadcom.c?revision=1.23&amp;view=markup" title="View file contents"><strong>1.23</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Merged wpa_supplicant.h into driver.h since the only remaining part of
+wpa_suppl...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="driver_bsd.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_bsd.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_bsd.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_bsd.c?revision=1.14&amp;view=markup" title="View file contents"><strong>1.14</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Merged wpa_supplicant.h into driver.h since the only remaining part of
+wpa_suppl...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="driver_hostap.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_hostap.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_hostap.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_hostap.c?revision=1.30&amp;view=markup" title="View file contents"><strong>1.30</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed inclusion of wpa_supplicant.h from files that did not really
+need it any...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="driver_hostap.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_hostap.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_hostap.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_hostap.h?revision=1.1&amp;view=markup" title="View file contents"><strong>1.1</strong></a></td>
+
+<td>&nbsp;4 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced driver/modules/hostap_common.h with a private header file
+driver_hostap...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="driver_ipw.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_ipw.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_ipw.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_ipw.c?revision=1.15&amp;view=markup" title="View file contents"><strong>1.15</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added clarifying notifications about Linux drivers moving to using
+driver_wext i...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="driver_madwifi.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_madwifi.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_madwifi.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_madwifi.c?revision=1.33&amp;view=markup" title="View file contents"><strong>1.33</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed inclusion of wpa_supplicant.h from files that did not really
+need it any...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="driver_ndis.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_ndis.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_ndis.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_ndis.c?revision=1.80&amp;view=markup" title="View file contents"><strong>1.80</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Merged wpa_supplicant.h into driver.h since the only remaining part of
+wpa_suppl...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="driver_ndis.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_ndis.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_ndis.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_ndis.h?revision=1.15&amp;view=markup" title="View file contents"><strong>1.15</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added multithreaded version of NDISUIO l2_packet interface for
+WinCE. This versi...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="driver_ndis_.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_ndis_.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_ndis_.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_ndis_.c?revision=1.14&amp;view=markup" title="View file contents"><strong>1.14</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed inclusion of wpa_supplicant.h from files that did not really
+need it any...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="driver_ndiswrapper.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_ndiswrapper.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_ndiswrapper.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_ndiswrapper.c?revision=1.19&amp;view=markup" title="View file contents"><strong>1.19</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unneeded header file inclusions.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="driver_prism54.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_prism54.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_prism54.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_prism54.c?revision=1.21&amp;view=markup" title="View file contents"><strong>1.21</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed inclusion of wpa_supplicant.h from files that did not really
+need it any...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="driver_test.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_test.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_test.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_test.c?revision=1.40&amp;view=markup" title="View file contents"><strong>1.40</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Merged wpa_supplicant.h into driver.h since the only remaining part of
+wpa_suppl...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="driver_wext.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_wext.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_wext.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_wext.c?revision=1.88&amp;view=markup" title="View file contents"><strong>1.88</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unused variables.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="driver_wext.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_wext.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_wext.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_wext.h?revision=1.11&amp;view=markup" title="View file contents"><strong>1.11</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added clarifying notifications about Linux drivers moving to using
+driver_wext i...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="driver_wired.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_wired.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+driver_wired.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/driver_wired.c?revision=1.11&amp;view=markup" title="View file contents"><strong>1.11</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Allow driver_wired.c to be built for FreeBSD. This is based on a patch
+from Jouk...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="drivers.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/drivers.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+drivers.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/drivers.c?revision=1.7&amp;view=markup" title="View file contents"><strong>1.7</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;From: Roy Marples &lt;<a href="mailto:uberlord&#64;gentoo.org">uberlord&#64;gentoo.org</a>&gt;
+Subject: [PATCH] Default driver
+
+With mo...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap.c?revision=1.125&amp;view=markup" title="View file contents"><strong>1.125</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Moved duplicate detection logic from eap_peer_sm_step_received() into
+a separate...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap.h?revision=1.54&amp;view=markup" title="View file contents"><strong>1.54</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Renamed global EAP functions to allow EAP server and peer
+implementations to be ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_aka.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_aka.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_aka.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_aka.c?revision=1.47&amp;view=markup" title="View file contents"><strong>1.47</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unneeded header file inclusions.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_common.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_common.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_common.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_common.c?revision=1.1&amp;view=markup" title="View file contents"><strong>1.1</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Renamed global EAP functions to allow EAP server and peer
+implementations to be ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_common.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_common.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_common.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_common.h?revision=1.1&amp;view=markup" title="View file contents"><strong>1.1</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Renamed global EAP functions to allow EAP server and peer
+implementations to be ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_defs.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_defs.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_defs.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_defs.h?revision=1.23&amp;view=markup" title="View file contents"><strong>1.23</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;EAP-PSK specification was released as RFC 4764, so start using it as
+the referen...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_fast.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_fast.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_fast.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_fast.c?revision=1.88&amp;view=markup" title="View file contents"><strong>1.88</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Share the same implementation for generating Phase 2 EAP-Nak between
+EAP-PEAP/TT...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_fast_pac.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_fast_pac.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_fast_pac.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_fast_pac.c?revision=1.8&amp;view=markup" title="View file contents"><strong>1.8</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for storing EAP-FAST PACs in binary format
+(fast_pac_format=binary...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_fast_pac.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_fast_pac.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_fast_pac.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_fast_pac.h?revision=1.6&amp;view=markup" title="View file contents"><strong>1.6</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added endianness annotation for sparse and resolved most of the
+warnings from th...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_gpsk.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_gpsk.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_gpsk.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_gpsk.c?revision=1.12&amp;view=markup" title="View file contents"><strong>1.12</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Updated EAP Generalized Pre-Shared Key (EAP-GPSK) to use pre-release
+version of ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_gpsk_common.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_gpsk_common.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_gpsk_common.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_gpsk_common.c?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Updated EAP-GPSK GKDF to use 1-octet long zero-string and SHA256 for
+GKDF if cip...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_gpsk_common.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_gpsk_common.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_gpsk_common.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_gpsk_common.h?revision=1.3&amp;view=markup" title="View file contents"><strong>1.3</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Updated EAP Generalized Pre-Shared Key (EAP-GPSK) to use pre-release
+version of ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_gtc.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_gtc.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_gtc.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_gtc.c?revision=1.26&amp;view=markup" title="View file contents"><strong>1.26</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed eap_gtc_process() to abort if eap_get_config_identity() fails.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_i.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_i.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_i.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_i.h?revision=1.29&amp;view=markup" title="View file contents"><strong>1.29</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed comments to refer to eap_peer_sm_init() instead of the old
+function name e...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_leap.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_leap.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_leap.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_leap.c?revision=1.24&amp;view=markup" title="View file contents"><strong>1.24</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed inclusion of wpa_supplicant.h from number of files that may
+have require...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_md5.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_md5.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_md5.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_md5.c?revision=1.24&amp;view=markup" title="View file contents"><strong>1.24</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed inclusion of wpa_supplicant.h from number of files that may
+have require...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_methods.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_methods.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_methods.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_methods.c?revision=1.12&amp;view=markup" title="View file contents"><strong>1.12</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Renamed global EAP functions to allow EAP server and peer
+implementations to be ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_methods.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_methods.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_methods.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_methods.h?revision=1.8&amp;view=markup" title="View file contents"><strong>1.8</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Renamed global EAP functions to allow EAP server and peer
+implementations to be ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_mschapv2.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_mschapv2.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_mschapv2.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_mschapv2.c?revision=1.54&amp;view=markup" title="View file contents"><strong>1.54</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Derive master key for password change case.
+(from Devicescape)
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_otp.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_otp.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_otp.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_otp.c?revision=1.20&amp;view=markup" title="View file contents"><strong>1.20</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unneeded header file inclusions.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_pax.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_pax.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_pax.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_pax.c?revision=1.25&amp;view=markup" title="View file contents"><strong>1.25</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Changed EAP-PAX references to use RFC 4746 (which is technically
+identical to dr...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_pax_common.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_pax_common.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_pax_common.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_pax_common.c?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Changed EAP-PAX references to use RFC 4746 (which is technically
+identical to dr...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_pax_common.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_pax_common.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_pax_common.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_pax_common.h?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added endianness annotation for sparse and resolved most of the
+warnings from th...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_peap.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_peap.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_peap.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_peap.c?revision=1.87&amp;view=markup" title="View file contents"><strong>1.87</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Share the same implementation for generating Phase 2 EAP-Nak between
+EAP-PEAP/TT...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_psk.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_psk.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_psk.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_psk.c?revision=1.37&amp;view=markup" title="View file contents"><strong>1.37</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;EAP-PSK specification was released as RFC 4764, so start using it as
+the referen...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_psk_common.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_psk_common.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_psk_common.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_psk_common.c?revision=1.7&amp;view=markup" title="View file contents"><strong>1.7</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for EMSK derivation.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_psk_common.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_psk_common.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_psk_common.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_psk_common.h?revision=1.10&amp;view=markup" title="View file contents"><strong>1.10</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added endianness annotation for sparse and resolved most of the
+warnings from th...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_sake.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sake.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_sake.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sake.c?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added endianness annotation for sparse and resolved most of the
+warnings from th...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_sake_common.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sake_common.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_sake_common.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sake_common.c?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for EMSK derivation.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_sake_common.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sake_common.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_sake_common.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sake_common.h?revision=1.5&amp;view=markup" title="View file contents"><strong>1.5</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added endianness annotation for sparse and resolved most of the
+warnings from th...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_sim.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sim.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_sim.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sim.c?revision=1.70&amp;view=markup" title="View file contents"><strong>1.70</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unneeded header file inclusions.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_sim_common.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sim_common.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_sim_common.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sim_common.c?revision=1.35&amp;view=markup" title="View file contents"><strong>1.35</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed eap_sim_msg_add_encr_end() to handle error cases where msg is
+NULL on entr...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_sim_common.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sim_common.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_sim_common.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_sim_common.h?revision=1.15&amp;view=markup" title="View file contents"><strong>1.15</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for calculating EMSK. In addition, this fixes MSK
+derivation for t...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_testing.txt" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_testing.txt?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_testing.txt</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_testing.txt?revision=1.42&amp;view=markup" title="View file contents"><strong>1.42</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for authenticated EAP-FAST provisioning:
+- fast_provisioning is no...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_tls.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_tls.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_tls.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_tls.c?revision=1.50&amp;view=markup" title="View file contents"><strong>1.50</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;eap_*_process() functions assume that eap_peer_tls_process_helper() is
+not retur...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_tls_common.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_tls_common.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_tls_common.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_tls_common.c?revision=1.65&amp;view=markup" title="View file contents"><strong>1.65</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unneeded header file inclusions.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_tls_common.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_tls_common.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_tls_common.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_tls_common.h?revision=1.24&amp;view=markup" title="View file contents"><strong>1.24</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Share the same implementation for generating Phase 2 EAP-Nak between
+EAP-PEAP/TT...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_tlv.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_tlv.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_tlv.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_tlv.c?revision=1.12&amp;view=markup" title="View file contents"><strong>1.12</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed comments to refer to eap_peer_sm_init() instead of the old
+function name e...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_tlv.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_tlv.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_tlv.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_tlv.h?revision=1.16&amp;view=markup" title="View file contents"><strong>1.16</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added endianness annotation for sparse and resolved most of the
+warnings from th...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_ttls.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_ttls.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_ttls.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_ttls.c?revision=1.94&amp;view=markup" title="View file contents"><strong>1.94</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Cleaned up eap_ttls_process() by dividing it into smaller functions.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eap_ttls.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_ttls.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_ttls.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_ttls.h?revision=1.6&amp;view=markup" title="View file contents"><strong>1.6</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added endianness annotation for sparse and resolved most of the
+warnings from th...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eap_vendor_test.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_vendor_test.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eap_vendor_test.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eap_vendor_test.c?revision=1.10&amp;view=markup" title="View file contents"><strong>1.10</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unneeded header file inclusions.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eapol_sm.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eapol_sm.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eapol_sm.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eapol_sm.c?revision=1.84&amp;view=markup" title="View file contents"><strong>1.84</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Moved BIT, MACSTR, MAC2STR, IFNAMSIZ, ETH_P_EAPOL, ETH_P_RSN_PREAUTH
+definitions...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="eapol_sm.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eapol_sm.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eapol_sm.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eapol_sm.h?revision=1.45&amp;view=markup" title="View file contents"><strong>1.45</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Invalidate EAP session data whenever changing the current network
+configuration ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="eapol_test.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eapol_test.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+eapol_test.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/eapol_test.c?revision=1.76&amp;view=markup" title="View file contents"><strong>1.76</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed inclusion of wpa_supplicant.h from files that did not really
+need it any...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="events.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/events.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+events.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/events.c?revision=1.47&amp;view=markup" title="View file contents"><strong>1.47</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Cleanup to bring WPA IE code in hostapd and wpa_supplicant more
+synchronized in ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="l2_packet.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+l2_packet.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet.h?revision=1.19&amp;view=markup" title="View file contents"><strong>1.19</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Moved BIT, MACSTR, MAC2STR, IFNAMSIZ, ETH_P_EAPOL, ETH_P_RSN_PREAUTH
+definitions...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="l2_packet_freebsd.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_freebsd.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+l2_packet_freebsd.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_freebsd.c?revision=1.11&amp;view=markup" title="View file contents"><strong>1.11</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced snprintf/os_snprintf calls with os_strlcpy where snprintf was
+being use...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="l2_packet_linux.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_linux.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+l2_packet_linux.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_linux.c?revision=1.15&amp;view=markup" title="View file contents"><strong>1.15</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced snprintf/os_snprintf calls with os_strlcpy where snprintf was
+being use...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="l2_packet_ndis.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_ndis.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+l2_packet_ndis.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_ndis.c?revision=1.6&amp;view=markup" title="View file contents"><strong>1.6</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replace os_strncpy/strncpy calls with os_strlcpy to start using a more
+secure fu...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="l2_packet_none.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_none.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+l2_packet_none.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_none.c?revision=1.5&amp;view=markup" title="View file contents"><strong>1.5</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replace os_strncpy/strncpy calls with os_strlcpy to start using a more
+secure fu...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="l2_packet_pcap.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_pcap.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+l2_packet_pcap.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_pcap.c?revision=1.17&amp;view=markup" title="View file contents"><strong>1.17</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced snprintf/os_snprintf calls with os_strlcpy where snprintf was
+being use...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="l2_packet_winpcap.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_winpcap.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+l2_packet_winpcap.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/l2_packet_winpcap.c?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced snprintf/os_snprintf calls with os_strlcpy where snprintf was
+being use...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="libtommath.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/libtommath.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+libtommath.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/libtommath.c?revision=1.3&amp;view=markup" title="View file contents"><strong>1.3</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Started converting standard ANSI/POSIX C library function calls to use
+os_ prefi...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="main.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/main.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+main.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/main.c?revision=1.23&amp;view=markup" title="View file contents"><strong>1.23</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Updated documentation on command line options.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="main_none.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/main_none.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+main_none.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/main_none.c?revision=1.2&amp;view=markup" title="View file contents"><strong>1.2</strong></a></td>
+
+<td>&nbsp;4 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added a new header file, includes.h, that includes all commonly used header
+file...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="main_winmain.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/main_winmain.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+main_winmain.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/main_winmain.c?revision=1.2&amp;view=markup" title="View file contents"><strong>1.2</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Implemented semi-useful WinMain() -based startup for
+wpa_supplicant. This versio...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="main_winsvc.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/main_winsvc.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+main_winsvc.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/main_winsvc.c?revision=1.13&amp;view=markup" title="View file contents"><strong>1.13</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Disabled pause/continue service options since they were not
+implemented and in g...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="mlme.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/mlme.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+mlme.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/mlme.c?revision=1.22&amp;view=markup" title="View file contents"><strong>1.22</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Use os_ wrappers for common C library functions; these were forgotten
+in some of...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="mlme.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/mlme.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+mlme.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/mlme.h?revision=1.4&amp;view=markup" title="View file contents"><strong>1.4</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed 'struct wpa_supplicant' completely from wpa_supplicant.h (and
+driver wra...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="ms_funcs.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ms_funcs.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ms_funcs.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ms_funcs.c?revision=1.27&amp;view=markup" title="View file contents"><strong>1.27</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Verify that os_get_random() call succeeds.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="ms_funcs.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ms_funcs.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ms_funcs.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ms_funcs.h?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Make sure nt_password_hash() cannot fail by using stack buffer instead
+of alloca...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="ndis_events.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ndis_events.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+ndis_events.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/ndis_events.c?revision=1.13&amp;view=markup" title="View file contents"><strong>1.13</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed off-by-one bounds checking for a WMI query string.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="nmake.mak" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/nmake.mak?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+nmake.mak</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/nmake.mak?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced the default control interface backend to be named pipes for
+Windows bui...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="openssl-0.9.8d-tls-extensions.patch" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/openssl-0.9.8d-tls-extensions.patch?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+openssl-0.9.8d-tls-extensions.patch</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/openssl-0.9.8d-tls-extensions.patch?revision=1.1&amp;view=markup" title="View file contents"><strong>1.1</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added an update OpenSSL patch for the current stable version (0.9.8d) for
+adding...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="openssl-tls-extensions.patch" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/openssl-tls-extensions.patch?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+openssl-tls-extensions.patch</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/openssl-tls-extensions.patch?revision=1.4&amp;view=markup" title="View file contents"><strong>1.4</strong></a></td>
+
+<td>&nbsp;4 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Re-diffed against openssl 0.9.8 and fixed SSL_set_hello_extension() to
+allow ext...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="pcsc_funcs.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/pcsc_funcs.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+pcsc_funcs.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/pcsc_funcs.c?revision=1.28&amp;view=markup" title="View file contents"><strong>1.28</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unused variables.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="pcsc_funcs.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/pcsc_funcs.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+pcsc_funcs.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/pcsc_funcs.h?revision=1.10&amp;view=markup" title="View file contents"><strong>1.10</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Cleaned up code a bit by removing shadowed symbol names
+('gcc -Wsymbol' warnings...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="peerkey.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/peerkey.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+peerkey.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/peerkey.c?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added endianness annotation for sparse and resolved most of the
+warnings from th...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="peerkey.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/peerkey.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+peerkey.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/peerkey.h?revision=1.1&amp;view=markup" title="View file contents"><strong>1.1</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Moved most of PeerKey functionality into a new file, peerkey.c, in
+order to get ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="pmksa_cache.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/pmksa_cache.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+pmksa_cache.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/pmksa_cache.c?revision=1.17&amp;view=markup" title="View file contents"><strong>1.17</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced a pointer to struct wpa_ssid with void* to make it clear that
+PMKSA cac...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="pmksa_cache.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/pmksa_cache.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+pmksa_cache.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/pmksa_cache.h?revision=1.7&amp;view=markup" title="View file contents"><strong>1.7</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced a pointer to struct wpa_ssid with void* to make it clear that
+PMKSA cac...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="preauth.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/preauth.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+preauth.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/preauth.c?revision=1.52&amp;view=markup" title="View file contents"><strong>1.52</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Do not include config.h if config_ssid.h is enough. config.h included
+config_ssi...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="preauth.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/preauth.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+preauth.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/preauth.h?revision=1.15&amp;view=markup" title="View file contents"><strong>1.15</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Allow WPA2 support to be removed with CONFIG_NO_WPA2=y in .config.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="preauth_test.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/preauth_test.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+preauth_test.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/preauth_test.c?revision=1.47&amp;view=markup" title="View file contents"><strong>1.47</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed inclusion of wpa_supplicant.h from files that did not really
+need it any...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="priv_netlink.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/priv_netlink.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+priv_netlink.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/priv_netlink.h?revision=1.4&amp;view=markup" title="View file contents"><strong>1.4</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for controlling network device operational state
+(dormant/up) for ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="rsa.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/rsa.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+rsa.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/rsa.c?revision=1.3&amp;view=markup" title="View file contents"><strong>1.3</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added explicit verification of ASN.1 header Class. This needs to be 0
+= Universa...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="rsa.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/rsa.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+rsa.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/rsa.h?revision=1.1&amp;view=markup" title="View file contents"><strong>1.1</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added RSA and bignum implementations for crypto_internal.c. This
+allows the inte...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="tls.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+tls.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls.h?revision=1.32&amp;view=markup" title="View file contents"><strong>1.32</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Cleaned up function comments.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="tls_gnutls.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls_gnutls.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+tls_gnutls.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls_gnutls.c?revision=1.28&amp;view=markup" title="View file contents"><strong>1.28</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Resolved number of compiler warnings about sign mismatches.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="tls_internal.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls_internal.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+tls_internal.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls_internal.c?revision=1.14&amp;view=markup" title="View file contents"><strong>1.14</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for receiving Applicate Data in the same message with
+Finished mes...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="tls_none.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls_none.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+tls_none.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls_none.c?revision=1.6&amp;view=markup" title="View file contents"><strong>1.6</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed tls_connection_handshake() to use the new set of function
+arguments.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="tls_openssl.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls_openssl.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+tls_openssl.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls_openssl.c?revision=1.74&amp;view=markup" title="View file contents"><strong>1.74</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced snprintf/os_snprintf calls with os_strlcpy where snprintf was
+being use...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="tls_schannel.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls_schannel.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+tls_schannel.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tls_schannel.c?revision=1.15&amp;view=markup" title="View file contents"><strong>1.15</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Converted Windows specific files to use os_*() function wrappers for
+common C li...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="tlsv1_client.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tlsv1_client.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+tlsv1_client.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tlsv1_client.c?revision=1.37&amp;view=markup" title="View file contents"><strong>1.37</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Replaced snprintf/os_snprintf calls with os_strlcpy where snprintf was
+being use...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="tlsv1_client.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tlsv1_client.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+tlsv1_client.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tlsv1_client.h?revision=1.9&amp;view=markup" title="View file contents"><strong>1.9</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for receiving Applicate Data in the same message with
+Finished mes...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="tlsv1_common.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tlsv1_common.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+tlsv1_common.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tlsv1_common.c?revision=1.18&amp;view=markup" title="View file contents"><strong>1.18</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Fixed a memory leak on error path (found with splint).
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="tlsv1_common.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tlsv1_common.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+tlsv1_common.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/tlsv1_common.h?revision=1.7&amp;view=markup" title="View file contents"><strong>1.7</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for TLS Session Ticket extension to enable EAP-FAST
+authentication...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="todo.txt" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/todo.txt?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+todo.txt</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/todo.txt?revision=1.36&amp;view=markup" title="View file contents"><strong>1.36</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Updated to-do list.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="version.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/version.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+version.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/version.h?revision=1.18&amp;view=markup" title="View file contents"><strong>1.18</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;CVS trunk is now used for 0.6.x versions.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="win_example.reg" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/win_example.reg?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+win_example.reg</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/win_example.reg?revision=1.3&amp;view=markup" title="View file contents"><strong>1.3</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;winsvc: added support for configuring ctrl_interface parameters in
+registry (ctr...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="win_if_list.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/win_if_list.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+win_if_list.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/win_if_list.c?revision=1.6&amp;view=markup" title="View file contents"><strong>1.6</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Use typecast to get rid of a compiler warning.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="wpa.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa.c?revision=1.192&amp;view=markup" title="View file contents"><strong>1.192</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Use NULL, not 0, with the pointer type.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="wpa.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa.h?revision=1.56&amp;view=markup" title="View file contents"><strong>1.56</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Made R0KH-ID variable length (1..48 octets; was fixed 48) and moved it
+into a su...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="wpa_cli.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_cli.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_cli.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_cli.c?revision=1.87&amp;view=markup" title="View file contents"><strong>1.87</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Updated copyright years from 2006 to 2007.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="wpa_ctrl.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_ctrl.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_ctrl.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_ctrl.c?revision=1.29&amp;view=markup" title="View file contents"><strong>1.29</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Removed unused variables.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="wpa_ctrl.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_ctrl.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_ctrl.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_ctrl.h?revision=1.12&amp;view=markup" title="View file contents"><strong>1.12</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Preparations on allowing wpa_ctrl_pending() to return -1 on error.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="wpa_ft.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_ft.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_ft.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_ft.c?revision=1.12&amp;view=markup" title="View file contents"><strong>1.12</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Updated PMK-R0 and PMKR0Name derivations to match with the changes in
+IEEE 802.1...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="wpa_i.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_i.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_i.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_i.h?revision=1.37&amp;view=markup" title="View file contents"><strong>1.37</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Made R0KH-ID variable length (1..48 octets; was fixed 48) and moved it
+into a su...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="wpa_ie.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_ie.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_ie.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_ie.c?revision=1.12&amp;view=markup" title="View file contents"><strong>1.12</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Cleanup to bring WPA IE code in hostapd and wpa_supplicant more
+synchronized in ...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="wpa_ie.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_ie.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_ie.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_ie.h?revision=1.6&amp;view=markup" title="View file contents"><strong>1.6</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added a prototype for struct wpa_ie_data since it is used in a
+function prototyp...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="wpa_passphrase.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_passphrase.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_passphrase.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_passphrase.c?revision=1.8&amp;view=markup" title="View file contents"><strong>1.8</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Started converting standard ANSI/POSIX C library function calls to use
+os_ prefi...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="wpa_supplicant.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_supplicant.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_supplicant.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_supplicant.c?revision=1.367&amp;view=markup" title="View file contents"><strong>1.367</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Made R0KH-ID variable length (1..48 octets; was fixed 48) and moved it
+into a su...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="wpa_supplicant.conf" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_supplicant.conf?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_supplicant.conf</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_supplicant.conf?revision=1.90&amp;view=markup" title="View file contents"><strong>1.90</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for storing EAP-FAST PACs in binary format
+(fast_pac_format=binary...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="wpa_supplicant_i.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_supplicant_i.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+wpa_supplicant_i.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/wpa_supplicant_i.h?revision=1.99&amp;view=markup" title="View file contents"><strong>1.99</strong></a></td>
+
+<td>&nbsp;2 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;C99 defines implementation-defined selection of sign for int
+bit-field. If the c...</td>
+
+
+
+</tr>
+
+<tr class="vc_row_even">
+<td colspan="2">
+
+<a name="x509v3.c" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/x509v3.c?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+x509v3.c</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/x509v3.c?revision=1.24&amp;view=markup" title="View file contents"><strong>1.24</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Remove dead code.
+</td>
+
+
+
+</tr>
+
+<tr class="vc_row_odd">
+<td colspan="2">
+
+<a name="x509v3.h" href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/x509v3.h?view=log" title="View file revision log">
+
+<img src="/cgi-bin/viewcvs.cgi/*docroot*/images/text.png" alt="" width="16" height="16" />
+x509v3.h</a>
+
+</td>
+
+
+
+<td>&nbsp;<a href="/cgi-bin/viewcvs.cgi/hostap/wpa_supplicant/x509v3.h?revision=1.14&amp;view=markup" title="View file contents"><strong>1.14</strong></a></td>
+
+<td>&nbsp;3 years</td>
+<td>&nbsp;jm</td>
+
+
+<td>&nbsp;Added support for parsing BasicConstraints and KeyUsage
+extensions. Use data fro...</td>
+
+
+
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+
+
+<hr />
+<table>
+<tr>
+<td><address><a href="mailto:j@w1.fi">Jouni Malinen</a></address></td>
+<td style="text-align: right;"><strong><a href="/cgi-bin/viewcvs.cgi/*docroot*/help_dirview.html">ViewVC Help</a></strong></td>
+</tr>
+<tr>
+<td>Powered by <a href="http://viewvc.tigris.org/">ViewVC 1.0.7</a></td>
+<td style="text-align: right;">&nbsp;</td>
+</tr>
+</table>
+</body>
+</html>
+
+

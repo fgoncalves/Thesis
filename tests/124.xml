@@ -1,0 +1,4 @@
+<handler id="124">
+	<transport type="reliable" />
+	<address type="inet" addr="192.168.0.124" port="57844" />
+</handler>

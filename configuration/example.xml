@@ -1,0 +1,15 @@
+<configuration>
+<!--	<interceptor_directory path="/home/fred/tese/src/kernel/modules/" />-->
+	<transport_types>
+		<transport type="reliable">
+			<parameter name="message_buffer_size" value="40" />
+			<parameter name="window" value="10" />
+		</transport>
+	</transport_types>	 
+<!--	<interceptors>
+		<interceptor module="deaggregate.ko" />
+	</interceptors>
+	<interceptor_rules>
+		<rule interceptor="deaggregation" proto="UDP" saddr="192.168.0.123" sport="57843" />
+	</interceptor_rules>-->
+</configuration>
